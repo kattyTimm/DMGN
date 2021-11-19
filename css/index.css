@@ -1,0 +1,280 @@
+#appttl {
+  color: white;
+}
+
+/* ----------------- Page content ----------------- */
+.page-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap; /*flex-direction и flex-wrap*/
+  flex-flow: row nowrap;
+  
+  position: fixed;
+  top: 56px;
+  bottom: 40px;
+  right: 0;
+  left: 0;
+  
+  background-color: #DFDFDF;
+}
+
+.content-list {
+  position: relative;
+  
+  flex: 1 0 15%;        /* flex-grow flex-shrink flex-basis */
+  -ms-flex: 1 0 15%;
+  
+  margin: 10px 0 10px 10px;
+  
+  background-color: #FEFEFE;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.content-detail {
+  flex: 2 1 85%;        /* flex-grow flex-shrink flex-basis */
+  -ms-flex: 2 1 85%;    /* IE10 */
+  
+  margin: 10px 10px 10px 5px;
+
+  background-color: #FFF;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  
+  overflow: hidden;
+  
+  position: relative;
+}
+
+.content-list > .list-title {
+  padding: 15px 15px 12px 15px;
+  color: #808080;
+  border-bottom: 1px double #DADADA;
+  overflow: hidden; 
+  
+  min-height: 48px;
+
+  background-image: linear-gradient(#BFBFBF, #FCFCFC);
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.15);
+}
+
+.content-detail > .detail-title {
+  padding: 15px 15px 12px 15px;
+  color: #808080;
+  border-bottom: 1px double #DADADA;
+  
+  height: 48px;
+
+  background-image: linear-gradient(#BFBFBF, #FCFCFC);
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.15);
+}
+
+.content-detail > .detail-body {
+  padding: 10px 10px 0 0;
+  
+  overflow-y: hidden;
+}
+
+.flt-card {
+  min-height: 50px;
+}
+
+#card_rwd {
+  flex: 1 0 30%;        
+  -ms-flex: 1 0 30%;
+  
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+  
+  overflow: hidden;
+}
+#card_rws {
+  flex: 2 1 70%;       
+  -ms-flex: 2 1 70%;
+  
+  margin: 10px;        
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+  
+  overflow: hidden;
+}  
+
+#card_rwd > .card-body {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#card_rws > .card-body {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.detail-card {
+  min-height: 110px;
+}
+
+.detail-comm-card {
+ /* flex: 1 1 calc(40% - 10px);       
+  -ms-flex: 1 1 calc(40% - 10px); */
+ 
+   flex: 1 1 30%;
+  -ms-flex: 1 1 30%;
+  
+  margin-left: 10px;
+  margin-bottom: 10px;
+  
+  min-width: 100px;
+
+}
+
+.detail-comm-card .card-body {
+  overflow-y: auto;
+}
+
+.detail-dmgn-card {
+ /* flex: 1 1 calc(60% - 10px);         flex-grow flex-shrink flex-basis 
+  -ms-flex: 1 1 calc(60% - 10px); */
+ 
+   flex: 2 2 70%;
+  -ms-flex: 2 2 70%;
+  
+  margin-left: 10px;
+  margin-bottom: 10px;
+  
+  min-width: 100px;
+}
+
+.detail-dmgn-card .card-body {
+  overflow-y: auto;
+}
+
+#actions_div{      
+  overflow-y: auto;
+  -ms-overflow-y: auto; 
+}
+
+/*************************************form_for_railwayCarriage_FPK****form_for_Train_FPK***************************************/
+
+#date_num_passport_downer{
+    margin-top: 35px;
+}
+
+.between{
+    margin-right: 10px;
+}
+
+.block-separator{
+    margin-top: 20px;
+}
+
+.modal-header-text{
+    color: rgb(0, 84, 168);
+}
+
+#row-k{
+    display: flex !important;
+    flex-direction: row !important;
+    margin-bottom: 10px;
+}
+
+.my_row_group{
+    margin-bottom: 0!important;
+}
+
+.d-none{
+    display: none !important;
+}
+
+.m-bottom-5{
+    margin-bottom: 5px !important;
+}
+
+#label_for_check_mdl_exist{
+    
+    color: rgb(220,20,60);
+    font-weight: bold;
+}
+/*************************************list-body buttons*******************************************/
+
+#show_carriage, #show_train{
+    margin: 10px;
+    border: none;
+    border-radius: 5px !important;
+}
+
+#show_carriage:hover, #show_train:hover{
+    background: rgba(255, 242, 228, 1);
+  border: none;
+}
+
+.active-btn{
+    background: rgba(229, 242, 255, 1);
+    border: none;
+}
+/*
+#org_abb{
+    font-weight: bold;
+}
+*/
+[id^="org_abb-"]{
+        font-weight: bold;
+}
+
+
+/*************************************************************badge ************************************/
+.badge-dmgn-doc {
+  border-left: 2px solid #FFBE77;
+}
+
+.badge-dmgn-doc:hover {
+  background-image: linear-gradient(#DADADA, #F0F0F0);
+}
+
+/****************************************** docs passport_pdf ****************************************/
+
+#docs_tmp, #passport_tmp{
+    background: rgba(91, 192, 222, 0.1);
+}
+
+#common_div_docs {  /*#docs_div_tmp, #passport_div_tmp*/
+    -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  min-height: 150px;
+}
+
+#docs_tmp, #passport_tmp{
+ flex: 1 0 15%;  
+ overflow: auto;
+ 
+}
+
+#passport_div_tmp{
+     flex: 1 1 30%;
+  -ms-flex: 1 1 30%;
+  
+}
+
+#docs_div_tmp{
+         flex: 2 2 70%;
+    -ms-flex: 2 2 70%;
+ 
+}
+
+
+/******************************************** filter ****************************************************/
+
+#show_filter{
+	padding: 2px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+#show_filter:hover{
+    cursor: pointer;
+    box-shadow: inset 0 0 15px rgba(250, 203, 152, 1);
+}
+
+.dropdown-item:hover{
+    cursor: pointer !important;
+}
